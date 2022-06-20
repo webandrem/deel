@@ -1,0 +1,47 @@
+/** 
+* Even scoped is not recomended to use component selectors, 
+* it can generate side effects when the project gets bigger 
+*/
+.search-box {
+  max-width: 60rem;
+  margin: auto;
+  padding: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.search-box label {
+  padding: 2rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box input {
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  padding: .5rem;
+  text-align: center;
+  /* not appropriate in case of WCAG compliant, should use ::focus-visible */
+  outline: 0;
+}
+
+
+.loading {
+  margin: auto;
+  padding: 4rem 0;
+}
+
+.orientations {
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0 0 1rem;
+}

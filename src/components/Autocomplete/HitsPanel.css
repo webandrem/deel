@@ -1,0 +1,37 @@
+.hits-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+ul {
+  overflow-y: hidden;
+}
+
+li {
+  margin-right: 1rem;
+}
+
+.selected {
+  border-radius: 1rem;
+  font-weight: bold;
+  color: steelblue;
+  background-color: aqua;
+}
+
+.no-hit {
+    font-size: 1.5rem;
+}
+
+.completed {
+  opacity: .25;
+}
+
+mark {
+  background: transparent;
+  text-decoration: underline;
+  color: currentColor;
+}
