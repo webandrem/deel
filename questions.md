@@ -45,20 +45,20 @@ withLoader(WrsppedComponent, url) {
 ```
 
 7. what's the difference in handling exceptions in promises, callbacks and async...await.
-> - Promisse uses resolving functions .catch and .then
+> - Promisse uses resolving functions `.catch` and `.then`
 ```js
 const data = getData()
                 .then(respone => response.data)
                 .then(data => json)
                 .catch(e => console.error(e))
 ```
-> - async/await requires a try/catch handler
+> - async/await requires a `try/catch` handler
 ```js
 try {
     const data = await getData();
 } catch(e) { console.error(e) }
 ```
-> - callbacks: there's a convetion that uses the first argumennt 
+> - callbacks: there's a convetion that uses the error as a first argumennt, so:
 ```js
 (e, ...args) => { if (e) { console.error(e) } }
 ```
