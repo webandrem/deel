@@ -1,6 +1,7 @@
 # Autocomplete challenge
 
 The project was developed in pure React according to this constraints: 
+<img width="1011" alt="Screen Shot 2022-06-20 at 11 28 02" src="https://user-images.githubusercontent.com/71982936/174624042-3a5d7df7-06bf-476e-a95b-78b775b556b9.png">
 
 Please prepare an auto-complete component in React TypeScript.
 
