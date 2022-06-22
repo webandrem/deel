@@ -18,7 +18,7 @@ Disclaimer: I'm JavaScript/TypeScript passionated, does not matter the UI librar
 
 ### 5. What is a fragment and why do we need it? Give an example where it might break my app.
 > That was my pain in Vue, now it's implemented in the new version. It's essentially about the obligation to have a root virtual wrapper, they don't influence the DOM.
-```react
+```js
    const a = () => (<Component One /> <Component Two />) 😰
    const b = () => (<><Component One /> <Component Two /></>) ✅
 ```
@@ -28,7 +28,7 @@ Disclaimer: I'm JavaScript/TypeScript passionated, does not matter the UI librar
 > - One built-in example: `React.memo`o for memoizing results.
 > - One library example: StyledComponents `styled`
 > - One custom example: withLoader is a draft code of generic loader thsat can be inserted in any component.
-```react
+```js
 withLoader(WrsppedComponent, url) {
   return (props) => {
     const [data, setData] = useState(null);
